@@ -17,7 +17,7 @@
     <!--pro_lead begin-->
     <div class="pro_lead">
         <div class="container">
-            <get table="category" parentid="2">
+            <get table="category" parentid="2" order="listorder asc">
                 <volist name="data" id="vo">
                     <div class="lead_box">
                         <h4 class="lead_tit"> <a id="{$vo['letter']}"><img src="{:getCategory($vo['catid'], 'extend.iconnormal')}" width="42" height="42" />{$vo['catname']}</a></h4>

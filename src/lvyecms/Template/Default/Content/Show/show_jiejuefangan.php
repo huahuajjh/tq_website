@@ -17,7 +17,7 @@
         <div class="container">
             <div class="banner_box">
                 <div class="banner_info">
-                    <h3 class="sub_tit">解决方案</h3>
+                    <h3 class="sub_tit">{:getCategory(6,'catname')}</h3>
                     <div class="banner_des">{:getCategory(6,'description')}</div>
                 </div>
             </div>
@@ -27,28 +27,13 @@
     <!--container begin-->
     <div class="container">
         <!--article begin-->
-        <section class="article">
-            <h6 class="article_tit">{$title}{:getCategory(6,'catname')}</h6>
+        <section class="article" style="padding-bottom: 0; border-bottom: 0;">
+            <h6 class="article_tit">{$title}</h6>
             <div class="container-text">
                 <div id="content"><textarea style="display:none;">{$content}</textarea></div>
             </div>
         </section>
         <!--article end-->
-        <!--客户案例 begin-->
-        <section class="pro_sec">
-            <h6 class="end_tit">客户案例</h6>
-            <div class="customer_case clearfix">
-                <content action="relation" relation="$relation" catid="$catid"  order="id DESC" num="10" keywords="$keywords" nid="$id">
-                    <volist name="data" id="vo">
-                        <a href="{$vo.url}">
-                            <img src="{$vo.thumb}" width="100" height="103" alt="{$vo.title}" />
-                            <div class="img_tit">{$vo.title}</div>
-                        </a>
-                    </volist>
-                </content>
-            </div>
-        </section>
-        <!--客户案例 end-->
     </div>
     <!--container end-->
 </main>

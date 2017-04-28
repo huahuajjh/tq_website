@@ -36,12 +36,8 @@
             .manager {
                 margin-top: 10px;
             }
-            #canvas {
-                width: 70%;
-                margin-left:15%;
-            }
 
-            .manager li, .manager li:hover {
+            .manager > li{
                 height: 150px;
                 margin-bottom: 46px;
                 background: #666667;
@@ -51,6 +47,8 @@
                 box-shadow: 0px 5px 15px 0px rgb(70, 70, 70);
                 border-radius: 150px 20px 20px 150px;
                 position: relative;
+                padding-left: 180px;
+                overflow: hidden;
             }
 
             .manager .box-img {
@@ -65,42 +63,22 @@
             }
 
             .manager_info {
-                overflow: hidden;
-                padding: 30px 50px;
+                overflow: auto;
+                padding: 30px 51px 30px 0;
                 height: 150px;
-                margin-left: 130px;
                 color: #ffffff;
                 font-size: 1.3rem;
                 line-height: 25px;
-            }
-
-            .manager .manager_info h5 {
-                line-height: 25px;
-                padding-bottom: 10px;;
-                margin-bottom: 10px;
-            }
-            .manager .manager_info h5 a {
-                color: #ffffff;
-            }
-            .manager .manager_info h5 a span {
-                color: #ffffff;
-            }
-            .manager .manager_info .manager_des {
-                color: #ffffff;
-                font-size: 1.3rem;
-                line-height: 25px;
-            }
-            .manager .manager_info .manager_des strong {
-                color: #a0a0a0;
             }
             /*手机*/
             @media screen and (max-width:600px){
 
-                .manager li, .manager li:hover {
+                .manager > li{
                     border-radius: 10px;
                     height: auto;
                     margin-top: 50px;
                     overflow: inherit;
+                    padding-left: 0;
                 }
 
                 .manager .box-img {
@@ -113,10 +91,9 @@
                 }
 
                 .manager_info {
-                    margin-left: 0;
                     height: auto;
                     min-height: 150px;
-                    padding-top: 60px;
+                    padding: 60px 10px 20px 10px;
                 }
             }
         </style>

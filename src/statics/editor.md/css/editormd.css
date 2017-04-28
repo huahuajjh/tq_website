@@ -3832,7 +3832,7 @@
 
 .editormd-preview-container, .editormd-html-preview {
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   padding: 20px;
   overflow: auto;
@@ -3845,8 +3845,16 @@
   padding-left: 20px;
   margin-left: 0;
   font-size: 14px;
-  font-style: italic;
+  font-style: initial;
+  background-color: #f7f7f7;
+  padding: 20px;
 }
+
+.editormd-preview-container blockquote p, .editormd-html-preview blockquote p{
+  font-size: 16px !important;
+  line-height: 2 !important;
+}
+
 .editormd-preview-container p code, .editormd-html-preview p code {
   margin-left: 5px;
   margin-right: 4px;

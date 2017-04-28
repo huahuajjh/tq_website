@@ -109,13 +109,12 @@ a.logo{ display: block; float: left; margin-top: 18px;}
 .subclass a{ display: inline-block; line-height: 22px; margin:3px 4% 3px 0;}
 .subclass .container > a { float: right; margin:3px 14px 3px 4%; }
 .subclass a:hover{ color: #fc5700;}
-.subclass a span{ display: inline-block; position: relative;}
+.subclass a span{ display: inline-block; position: relative; font-size: 14px;}
 .subclass_pro{ background:rgba(0,0,0,0.7); }
 .subclass_pro .container{ padding-top: 0; padding-bottom: 0;}
-.subclass_pro .container{ padding-left: 270px;}
 .subclass_pro:before{
     position: absolute;
-    top: 100px;
+    top: 69px;
     left: 0;
     z-index: 50;
     content: "";
@@ -124,10 +123,10 @@ a.logo{ display: block; float: left; margin-top: 18px;}
     /*background: url("../images/nav_dec.png") center top no-repeat;*/
 	background:#fff;
 }
-.pro_line{ width:28%; max-width: 272px; float: left; position:relative;}
+.pro_line{ width:14.28%; max-width: 272px; float: left; position:relative;}
 .pro_line:before{
     position: absolute;
-    top: 99px;
+    top: 69px;
     left: 0;
     z-index: 50;
     content: "";
@@ -137,7 +136,7 @@ a.logo{ display: block; float: left; margin-top: 18px;}
 }
 .nav_list li:hover .subclass{ display:block;}
 .pro_line a{ display: block; margin: 0;}
-.pro_line a.erji{ font-size: 16px; margin: 40px 0 60px;}
+.pro_line a.erji{ font-size: 14px; margin: 28px 0 32px;}
 .pro_line a.erji img{ vertical-align: middle; margin-right: 18px; width: 22px; height: 22px;}
 .pro_line .sanji a{ margin-bottom: 20px;}
 .pro_line .sanji a:hover{ color: #fc5700;} 
@@ -321,12 +320,13 @@ a.menu-activator.active div.visual:hover i.line.line01, a.menu-activator.active 
         float: none;
         display: block;
         padding: 0;
+        position: relative;
     }
     #menu-overlay .nav_list li > a{
         background-color: #232323;
         border-bottom: 1px solid #fff; 
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px 15px;
         height: auto;
         text-align: left;
@@ -357,7 +357,7 @@ a.menu-activator.active div.visual:hover i.line.line01, a.menu-activator.active 
         background-color: #3c3f40;
         border-bottom: 1px solid #515354;
         color: #838b8f;
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px 15px;
         display: block;
         margin: 0;
@@ -376,7 +376,7 @@ a.menu-activator.active div.visual:hover i.line.line01, a.menu-activator.active 
         background-color: #3c3f40;
         border-bottom: 1px solid #515354;
         color: #838b8f;
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px 30px;
         display: block;
         margin: 0;

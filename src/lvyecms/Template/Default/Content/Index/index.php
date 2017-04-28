@@ -40,7 +40,7 @@
             <div class="container">
                 <!--pro_scr begin-->
                 <div id="pro_scr" class="owl-carousel">
-                    <get table="category" parentid="2">
+                    <get table="category" parentid="2" order="listorder asc">
                         <volist name="data" id="vo">
                         <!--item begin-->
                         <div class="item">
@@ -49,8 +49,8 @@
                                     <div class="pro_ico">
                                         <u class="cl"></u>
                                         <u class="cr"></u>
-                                        <img src="{:getCategory($vo['catid'], 'extend.iconfocus')}" width="95" height="95" alt="{$vo['catname']}" />
-                                        <img src="{:getCategory($vo['catid'], 'extend.iconnormal')}" width="75" height="75" alt="{$vo['catname']}" class="ico_colorful" />
+                                        <img src="{:getCategory($vo['catid'], 'extend.iconnormal')}" width="95" height="95" alt="{$vo['catname']}" />
+                                        <img src="{:getCategory($vo['catid'], 'extend.iconfocus')}" width="75" height="75" alt="{$vo['catname']}" class="ico_colorful" />
                                     </div>
                                     <h4 class="pro_name">{$vo['catname']}</h4>
                                     <div class="pro_des">{$vo['description']}</div>
@@ -75,7 +75,7 @@
                             navigation: false,
                             pagination: true,
                             lazyLoad: true,
-                            //autoPlay : 5000,
+                            autoPlay : 3500,
                         });
                     });
                 </script>
@@ -94,7 +94,7 @@
                         <volist name="data" id="li">
                             <!--item begin-->
                             <div class="item">
-                                <div class="solution_area" style="background-image: url('{$config_siteurl}statics/tq/image/20160623151008_15306.jpg');">
+                                <div class="solution_area" style="background-image: url('{$li['thumb']}');">
                                     <a href="{$li['url']}">
                                         <div class="solution_info">
                                             <h4 class="solution_tit">{$li['title']}</h4>

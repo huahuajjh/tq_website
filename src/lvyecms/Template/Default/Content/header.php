@@ -46,7 +46,7 @@
                         <!--subclass begin  产品的下拉菜单样式与其他不同-->
                         <div class="subclass subclass_pro">
                             <div class="container clearfix">
-                                <get table="category" parentid="2">
+                                <get table="category" parentid="2" order="listorder asc">
                                     <volist name="data" id="vo">
                                     <div class="pro_line">
                                         <a href="{:U('lists', array('catid'=>2))}#{$vo['letter']}" class="erji"><img src="{:getCategory($vo['catid'], 'extend.iconnormal')}" width="22" height="22" /><span>{$vo['catname']}</span></a>
