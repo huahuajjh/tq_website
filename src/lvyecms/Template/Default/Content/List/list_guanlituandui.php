@@ -63,7 +63,7 @@
             }
 
             .manager_info {
-                overflow: auto;
+                overflow: hidden;
                 padding: 30px 51px 30px 0;
                 height: 150px;
                 color: #ffffff;
