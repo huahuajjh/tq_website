@@ -59,25 +59,6 @@
       </div>
     </section>
     <!--应用场景 end-->
-    <!--客户案例 begin-->
-    <section class="pro_sec">
-      <div class="container clearfix">
-        <h6 class="end_tit">客户案例</h6>
-        <!--customer_case begin-->
-        <div class="customer_case clearfix">
-          <content action="relation" relation="$relation" catid="$catid"  order="id DESC" num="10" keywords="$keywords" nid="$id">
-            <volist name="data" id="vo">
-                <a href="{$vo.url}">
-                    <img src="{$vo.thumb}" width="100" height="103" alt="{$vo.title}" />
-                    <div class="img_tit">{$vo.title}</div>
-                </a>
-            </volist>
-          </content>
-        </div>
-        <!--customer_case end-->
-      </div>
-    </section>
-    <!--客户案例 end-->
   </div>
   <!--pro_lead end-->
 </main>
