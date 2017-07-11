@@ -391,7 +391,7 @@ a.menu-activator.active div.visual:hover i.line.line01, a.menu-activator.active 
     }
 
     #menu-overlay li.active .subclass {
-        max-height: 500px;
+        max-height: 9999px;
     }
 }
 /*=====================footer================*/
